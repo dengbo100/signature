@@ -1,0 +1,42 @@
+.flex{
+  display: flex;
+}
+.flex-direction{  
+  flex-direction: column;
+}
+.just-center{
+  justify-content: center;
+}
+.just-start{
+  justify-content: start;
+}
+.just-end{
+  justify-content: end;
+}
+.just-between{
+  justify-content: space-between;
+}
+.just-around{
+  justify-content: space-around;
+}
+.align-center{
+  align-items: center;
+}
+.align-start{
+  align-items: flex-start;
+}
+.align-end{
+  align-items: flex-end;
+}
+.text-center{
+  text-align: center;
+}
+.ml-12{
+  margin-left: 12px;
+}
+.mt-6{
+  margin-top: 6px;
+}
+.mt-12{
+  margin-top: 12px;
+}

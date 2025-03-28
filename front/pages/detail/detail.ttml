@@ -1,0 +1,21 @@
+<view class="intro">
+	<view class="box">
+		<view class="title">
+			<image style="width:100%;" src="../../images/title1.png" mode="widthFix" />
+			<view class="bg_img">
+				<image style="width:100%;" src="../../images/bg_title1.png" mode="widthFix" />
+				<image class="bg_title" style="width:100%;" src="{{imgurl}}" mode="widthFix" />
+			</view>
+			<!-- <image style="width:100%;" src="{{imgurl}}" mode="widthFix" /> -->
+		</view>
+		<view class="de_btn">
+			<image style="width:100%;" src="{{save_img}}" mode="widthFix" bindtap="baocun" />
+			<button tt:if="{{dy_btn_show}}"  class="custom-share-button btn_box" data-channel="video" open-type="share"></button>
+      <!-- <view class="btn_box"> -->
+        <!-- <button class="custom-share-button pat_btn" data-channel="video" open-type="share"></button> -->
+        <!-- <image class="custom-share-button" data-channel="video" open-type="share" style="width:100%;margin-top: 16px;" src="../../images/b1.png" mode="widthFix" /> -->
+      <!-- </view> -->
+    </view>
+    <view style="font-size:12px;color:#C5A270;">--本小程序仅供娱乐--</view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<view class="binding-bg">
+  <view style="text-align:center;margin-top:100px;">
+     <image  style="width: 20%;margin:auto;" src="../../images/logo.png" mode="widthFix" />
+  </view>
+
+ 
+</view>
+<view class="binding" tt:if="{{nickname!=''}}">
+  <view tt:if="{{items.length < 1}}" class="box">
+    <view class="title">您还未绑定此账号</view>
+    <view class="text">您可以请按照以下步骤绑定{{nickname}}账号。</view>
+    <image style="width: 100%" src="https://13.yxymk.net/static/dlm/bangding.gif" mode="widthFix" />
+  </view>
+  <view tt:else class="box">
+    <view class="title">请选择您当前账号</view>
+    <view class="text_r">如果没有当前账号，需要您去抖联盟系统绑定即可显示，选错账号数据将会错乱</view>
+    <!-- <view class="list" tt:for="{{user_info}}" tt:for-item="itemName" bindtap="radioChange">
+      <view class="tx">
+        <image style="width:40px;height:40px;" src="../../images/95.jpg" />
+      </view>
+      <text class="name">{{itemName.name}}</text>
+      <label class="radio"> <radio value="r1" checked="{{itemName.check}}" /></label>
+    </view> -->
+    <radio-group class="bind-list-wrapper" bindchange="radioChange">
+      <label
+        class="page-cell page-check__label"
+        tt:for="{{items}}"
+        tt:key="{{item.value}}"
+        >
+        <view class="list flex align-center">
+          <view class="tx">
+            <image style="width:40px;height:40px;" src="{{item.avatar}}" />
+          </view>
+          <view class="flex flex-direction ml-12">
+            <text class="name">{{item.nickname}}</text>
+            <text class="num mt-6">粉丝数量：{{item.fans_count}}</text>
+          </view>
+          
+          <radio class="radio" value="{{item.value}}" checked="{{item.checked}}" />
+        </view>
+      </label>
+    </radio-group>
+    <view class="{{indexs!=''?'active btn':'btn'}}" bindtap="binding">确认当前账号</view>
+  
+  </view>
+</view>

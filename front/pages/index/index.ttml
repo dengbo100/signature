@@ -1,0 +1,52 @@
+<view class="intro">
+	<!-- <view class="contenr">
+    <image
+      style="width:100%;"
+      src="../../images/141.jpg"
+      mode="widthFix"
+    />
+  </view> -->
+
+	<view class="box">
+		<view tt:if="{{mobileNo!=''}}" class="user_id">ID: {{mobileNo}}</view>
+		<view class="title">
+			<view class="title_img">
+				<image src="../../images/title2.png" mode="widthFix" />
+			</view>
+			<view class="bg_img">
+				<image style="width:100%;" src="../../images/bg_title1.png" mode="widthFix" />
+				<image class="bg_title" style="width:100%;" src="{{imgsrc}}" mode="widthFix" />
+			</view>
+		</view>
+		<view class="content">
+			<view class="content_box">
+				<text>签名名称</text>
+				<input type="text" placeholder="请输入2-4个字的姓名" bindinput="strlength" placeholder-style="font-size:16px;color:#d7bf9b" />
+      </view>
+      <view style="margin-top: 10px;" class="content_box">
+        <text>选择类型</text>
+        <picker
+            value="{{index}}"
+            range="{{array}}"
+            range-key="name"
+            bindchange="bindPickerChange"
+          >
+            <view class="picker">
+              {{array[index].name}}
+            </view>            
+          </picker>
+      </view>
+    </view>
+    <view class="btn" bindtap="addname">
+      {{btnstr}}      
+    </view>    
+    <view class="entrance" >
+      <view tt:if="{{dy_btn_show}}" class="samll_box pat" bindtap="pating"></view>
+      <button tt:if="{{dy_btn_show}}" class="custom-share-button samll_box pat" data-channel="video" open-type="share" ></button>
+      <view  class="samll_box log" bindtap="tapName"></view>
+    </view>
+    <view style="font-size:12px;color: #C5A270;margin-top: 20px;">--本小程序仅供娱乐--</view>   
+    <view style="font-size:12px;color: #dbdbdb;margin-top: 20px;">--厦门雄笙科技提供技术支持--</view>  
+  </view>  
+  <!-- <button type="primary" bindtap="tapName">页面主操作 Normal</button> -->
+</view>

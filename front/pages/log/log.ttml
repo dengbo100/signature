@@ -1,0 +1,17 @@
+<view class="intro">
+  <view class="box">
+    <view class="content">
+      <image style="width:120px;" src="../../images/logo.png" mode="widthFix" />
+      <view class="log_text">
+        生成记录
+      </view>
+      <view class="log_box">
+        <view class="log_list" tt:for="{{list}}" data-content="{{item}}" bindtap="jump">
+          {{item.name}}
+          <image src="../../images/jiao2.png" mode="" />
+        </view>
+      </view>
+      <view style="font-size:12px;color:#fff;">--本小程序仅供娱乐--</view>
+    </view>
+  </view>
+</view>

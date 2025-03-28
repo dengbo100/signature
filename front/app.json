@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/log/log",
+    "pages/detail/detail",
+    "pages/binding/binding"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+ 
+    "navigationBarTitleText": "艺术签名设计",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "transparentTitle": "always"
+    
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页Home"
+      }
+ 
+    ]
+  }
+}
